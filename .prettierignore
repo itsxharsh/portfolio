@@ -1,0 +1,33 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+build
+coverage
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Generated files
+*.min.js
+*.min.css
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# IDE files
+.vscode
+.idea
+
+# Git hooks generated files
+.husky/_
+
+# Assets that shouldn't be formatted
+public/assets

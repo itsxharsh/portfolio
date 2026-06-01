@@ -3,12 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "prettier": "3.8.3",
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
   }
