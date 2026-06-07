@@ -29,10 +29,9 @@ env:
 jobs:
   # Single deploy job since we're just deploying
   build:
-    # name: Build
-    # environment:
-    #   name: github-pages
-    #   url: ${{ steps.deployment.outputs.page_url }}
+    name: Build
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
 
     steps:
